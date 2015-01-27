@@ -38,7 +38,14 @@ def interpret(words):
 			if len(browser_list) > 0:
 				close_browser(browser_list.pop())
 			else:
-				print "No Browser To be Closed"
+				print keyword,": No Browser To be Closed"
+
+		elif (keyword == "Maximize Window"):
+			if len(browser_list) > 0:
+				browser = browser_list[-1]
+				maximize_window(browser)
+			else:
+				print keyword,": No Browser Opened"
 
 		elif (keyword == "Open URL"):
 			# URL entered in file should be of format "https://....." or "http://....."
@@ -51,9 +58,9 @@ def interpret(words):
 					open_url(browser, url)
 				else:
 					close_browser(browser_list.pop())
-					print "No Url Specified"
+					print keyword,": No Url Specified"
 			else:
-				print "No Browser Opened"
+				print keyword,": No Browser Opened"
 
 		else:
 			if len(browser_list) > 0:

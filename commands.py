@@ -36,6 +36,14 @@ def close_browser(driver):
 	'''
 	driver.close()
 
+def maximize_window(driver):
+	'''
+		Maximises the opened browser
+
+		@param: driver - variable for the opened browser (see "open_browser")
+	'''
+	driver.maximize_window()
+
 def open_url(driver, url):
 	'''
 		Opens a Webpage in the firefox browser
