@@ -47,9 +47,9 @@ Now set up the configuration based on your system and network and your done.
 4 RUNNING
 ---------
 
-To run the tests, use the __pytestrun.py__ file. We have an example file in the __sample__ folder called __testfile.py__. To run it simply use the following command:
+To run the tests, use the __pytestrun.py__ file. We have an example file in the __example__ folder called __testfile.py__. To run it simply use the following command:
 
-        python pytestrun.py sample/testfile.pyt
+        python pytestrun.py example/testfile.pyt
 
 
 5 STATUS
