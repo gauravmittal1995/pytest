@@ -1,6 +1,7 @@
 #!/usr/bin/python
 '''
 	Defines commands for the keywords
+    Uses Selenium
 '''
 
 from selenium import webdriver
